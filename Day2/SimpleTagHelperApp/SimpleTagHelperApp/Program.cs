@@ -9,6 +9,6 @@ var app = builder.Build();
 app.UseStaticFiles();
 app.MapControllerRoute(name: "default",
     pattern: "{controller}/{action}/{id?}",
-    defaults: new { controller = "Home", action = "Index" });
+    defaults: new { controller = "Developer", action = "Index" });
 
 app.Run();

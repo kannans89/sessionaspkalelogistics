@@ -1,0 +1,20 @@
+﻿@model List<Menu> 
+
+    <h1>Menu list @Model.Count</h1>
+
+    <ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @if (item.IsSelected)
+            {
+                @item.Text
+            }
+            else
+            {
+              <a href="@item.Url">@item.Text</a>    
+            }
+        </li>
+
+    }
+</ul>

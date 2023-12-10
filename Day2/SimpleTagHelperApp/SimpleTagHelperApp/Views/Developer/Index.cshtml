@@ -1,0 +1,53 @@
+﻿@model Developer
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" 
+rel="stylesheet" />
+<h1>Index of Developer !!</h1>
+
+
+<greet dev-name="KaleLogisticsDevelopers"></greet>
+
+
+@* @Html.LabelFor(m=>m.FirstName)
+@Html.TextBoxFor(m=>m.FirstName)
+<br />
+@Html.LabelFor(m => m.LastName)
+@Html.TextBoxFor(m => m.LastName) *@
+
+@* <h1>Using tag helper</h1>
+<label asp-for="FirstName"></label>
+<input asp-for="FirstName"/>
+<br/>
+<label asp-for="LastName"></label>
+<input asp-for="LastName" />
+ *@
+
+
+@* @{
+    Html.RenderPartial("_timestamp", new TimeStampModel
+    {
+        Format="hh:mm:ss",
+        Title="Developer timestamp"
+
+    });
+}
+
+@{
+    Html.RenderPartial("_timestamp", new TimeStampModel
+            {
+               
+                Title = "Developer timestamp 2"
+
+            });
+} *@
+
+
+@* @await Component.InvokeAsync("Menu", new { selectIndexNo = 1 }) *@
+
+<vc:menu select-index-no="2"></vc:menu>
+
+<vc:menu select-index-no="0"></vc:menu>
+
+
+
