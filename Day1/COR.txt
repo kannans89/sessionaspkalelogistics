@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain of Responsibility Example</title>
+</head>
+<body>
+
+
+ <div id="window" onclick="fnWindow(event)">
+        <div id="panel" onclick="fnPanel(event)">
+            <div id="subpanel" onclick="fnsubpanel(event)">
+                <button id="myButton" onclick="fnButton(event)">Click me!</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+      function fnButton(e) {
+
+             e.companyName= "KaleLogistics";
+            console.log("button");
+        }
+
+      function fnsubpanel(e) {
+            console.log("sub panel");
+        }
+    function fnPanel(e) {
+            console.log("panel handled this");
+           
+           
+        }
+
+    function fnWindow(e) {
+            console.log("fnwindow");
+           console.log(e);
+                     
+        }
+
+</script>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,9 @@
+﻿@model Customer
+@inject IDataService _serice
+
+
+<h1>Showing customer details</h1>
+
+Name is :@Model.Name <br/>
+Id is : @Model.Id
+Message: @_serice.GetData()
