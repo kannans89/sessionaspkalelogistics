@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+       
+
+
+    </head>
+
+
+    <body>
+
+        <div class="container">
+
+            <nav>
+            <a asp-controller="Home">Home</a>&nbsp;&nbsp;
+            <a asp-controller="About">About</a>&nbsp;&nbsp;
+            <a asp-controller="Career">Career</a>&nbsp;&nbsp;
+
+            </nav>
+
+                      
+
+              <div>
+                   @RenderBody()
+
+                
+           
+
+              </div>
+
+          <script src="~/lib/jquery/dist/jquery.min.js"></script>
+          @RenderSection("scriptContent",required:false);
+
+        <footer>
+           
+             <div>&copy; copyright @DateTime.Now.Year</div>
+        </footer>
+
+        </div>
+
+
+    </body>
+</html>
+
