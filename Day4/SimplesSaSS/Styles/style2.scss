@@ -1,0 +1,11 @@
+// Define your variables
+$bgcolor: lightgreen;
+$textcolor: rgb(0, 0, 255); // Blue color
+$fontsize: 50px;
+
+// Apply styles using variables to a div
+div {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+}
