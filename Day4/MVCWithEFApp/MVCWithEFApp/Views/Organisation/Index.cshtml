@@ -1,0 +1,19 @@
+﻿@model List<Organization>
+
+<h1>Displaying all organization data</h1>
+
+
+<table>
+
+    @foreach(var org in Model) {
+     <tr>
+         <td>@org.Id</td>
+        <td>@org.Name</td>
+        <td>
+            <a asp-action="Edit" asp-controller="Organisation" asp-route-id="@org.Id">Edit</a>
+        </td>
+     </tr>
+    }
+
+</table>
+
