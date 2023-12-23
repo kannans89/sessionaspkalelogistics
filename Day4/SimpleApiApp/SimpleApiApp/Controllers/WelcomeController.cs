@@ -17,7 +17,7 @@ namespace SimpleApiApp.Controllers
 			return "Post called";
 		}
 
-		[HttpPut]
+		[HttpPut("myput/edit")]
 		public string Put()
 		{
 			return "Put called";
