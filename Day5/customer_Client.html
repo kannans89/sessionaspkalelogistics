@@ -1,0 +1,25 @@
+
+
+ 
+<html>
+
+    <body>
+
+          <input type="button" value="getCustomers" onclick="getCustomers()" />
+		  
+		  <script>
+		  
+		          async function getCustomers(){
+				     alert("making api call");
+					 
+					 const response = await fetch("https://localhost:7136/api/v1/Customer/allcustomers");
+                       const customers = await response.json();
+                      console.log(customers);
+				   }
+		  
+		  </script>
+		  
+   </body>
+   
+  </html
+
