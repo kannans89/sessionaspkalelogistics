@@ -1,0 +1,15 @@
+﻿@page
+@model RazorPageFormApp.Pages.GreetingModel
+@{
+}
+
+<h1>Greeting Page !</h1>
+
+
+<form method="post">
+    @Html.TextBoxFor(m => m.UserName)
+    @Html.AntiForgeryToken()  
+    <input type="submit" value="Greet" />
+</form>
+
+ <h1>@Model.Message</h1>

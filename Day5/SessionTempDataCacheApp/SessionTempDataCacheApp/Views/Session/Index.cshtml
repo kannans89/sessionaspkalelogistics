@@ -1,0 +1,9 @@
+﻿
+<h1>Session id is :@Context.Session.Id</h1>
+
+<h1>Counter old value is :@(Context.Session.GetInt32("counter") - 1)</h1>
+<h1>Counter new value is :@(Context.Session.GetInt32("counter"))</h1>
+
+
+<hr />
+<h2>Temp data value is @(TempData["message"] ?? "No data in temp")</h2>
