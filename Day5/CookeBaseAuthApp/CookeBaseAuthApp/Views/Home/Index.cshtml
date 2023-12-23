@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (User.Identity.Name != null)
+{
+    <h1>Welcome back @(User?.Identity?.Name) </h1>
+}
+else
+{
+    <h1>Hello  Guest user</h1>
+}
